@@ -86,17 +86,28 @@ Each repository is named for what it does (`cbom-scanner`, `hybrid-jwe`, …). T
 
 ## 📚 Repositories
 
-The catalogue grows with every release. A package appears here only after it passes the full release checks (see [How we ship](#-engineering-principles)).
+Browse the full, always-current catalogue by area. GitHub lists every repository tagged for that area, so new releases appear here automatically.
 
-| Area | Repository | Package | Ecosystem | What it does | Status |
-|---|---|---|---|---|---|
-| 🔬 Conformance | [acvp-conformance](https://github.com/PQBlocks/acvp-conformance) | `pqblocks-acvp` | PyPI | Runs NIST ACVP vectors for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA) with a reference oracle and pluggable adapters, and reports every case | 0.1 alpha |
-| 🧾 Migration | [cbom-scanner](https://github.com/PQBlocks/cbom-scanner) | `pqblocks-scan` | PyPI | Finds classical and post-quantum cryptography in source or on a TLS endpoint; emits CycloneDX 1.6 CBOM and SARIF 2.1.0 | 0.1 alpha |
-| 📡 Interop | [pqc-wireformat](https://github.com/PQBlocks/pqc-wireformat) | `pqblocks-wire` | PyPI | Length-prefixed container for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures | 0.1 alpha |
-| 📡 Interop | [hybrid-jwe](https://github.com/PQBlocks/hybrid-jwe) | `pqblocks-jwe` | PyPI | Compact token format for hybrid ML-KEM-768 + X25519 JWE-style messages (format only, no encryption) | 0.1 alpha |
-| 🌀 Quantum-inspired | [simulated-bifurcation](https://github.com/PQBlocks/simulated-bifurcation) | `pqblocks-bifurcation` | PyPI | Ballistic and discrete Simulated Bifurcation for Ising / QUBO problems | 0.1 alpha |
+<p align="center">
+  <a href="https://github.com/orgs/PQBlocks/repositories?q=topic%3Apq-crypto"><img alt="PQ cryptography" src="https://img.shields.io/badge/%F0%9F%94%90%20PQ%20cryptography-browse-0f172a?style=for-the-badge"></a>
+  <a href="https://github.com/orgs/PQBlocks/repositories?q=topic%3Apq-migration"><img alt="Migration and readiness" src="https://img.shields.io/badge/%F0%9F%A7%BE%20Migration%20%26%20readiness-browse-0f172a?style=for-the-badge"></a>
+  <a href="https://github.com/orgs/PQBlocks/repositories?q=topic%3Apq-interop"><img alt="Interoperability" src="https://img.shields.io/badge/%F0%9F%93%A1%20Interoperability-browse-0f172a?style=for-the-badge"></a>
+  <a href="https://github.com/orgs/PQBlocks/repositories?q=topic%3Apq-conformance"><img alt="Conformance" src="https://img.shields.io/badge/%F0%9F%94%AC%20Conformance-browse-0f172a?style=for-the-badge"></a>
+  <a href="https://github.com/orgs/PQBlocks/repositories?q=topic%3Aquantum-inspired"><img alt="Quantum-inspired" src="https://img.shields.io/badge/%F0%9F%8C%80%20Quantum--inspired-browse-0f172a?style=for-the-badge"></a>
+  <a href="https://github.com/orgs/PQBlocks/repositories"><img alt="All repositories" src="https://img.shields.io/badge/All%20repositories-%E2%86%92-22d3ee?style=for-the-badge"></a>
+</p>
 
-> **Coming through review:** hybrid PQ file encryption, crypto-agility CI gates, PQ static analysis, policy-as-code, TLS hybrid interoperability, ML-KEM CSR proof-of-possession, CNSA 2.0 evidence packs, FIPS 203/204/205 primitives, a quantum-inspired optimisation suite, and the first **npm** modules and **SDKs**.
+### ⭐ Start here
+
+| Area | Repository | Package | What it does |
+|---|---|---|---|
+| 🧾 Migration | [cbom-scanner](https://github.com/PQBlocks/cbom-scanner) | `pqblocks-scan` | Find the cryptography in your code and emit a CycloneDX 1.6 CBOM |
+| 🔬 Conformance | [acvp-conformance](https://github.com/PQBlocks/acvp-conformance) | `pqblocks-acvp` | Check ML-KEM / ML-DSA against official NIST ACVP vectors |
+| 📡 Interop | [pqc-wireformat](https://github.com/PQBlocks/pqc-wireformat) | `pqblocks-wire` | Carry ML-KEM ciphertexts and PQ signatures in one container |
+| 📡 Interop | [hybrid-jwe](https://github.com/PQBlocks/hybrid-jwe) | `pqblocks-jwe` | Token format for hybrid ML-KEM-768 + X25519 messages |
+| 🌀 Quantum-inspired | [simulated-bifurcation](https://github.com/PQBlocks/simulated-bifurcation) | `pqblocks-bifurcation` | Fast heuristic solver for Ising / QUBO problems |
+
+Every repository states its status (`0.1 alpha` today) and its limits in its own README and `SECURITY_NOTES.md`. New packages, including the first **npm** modules and **SDKs**, are added continuously as they pass the release checks.
 
 ---
 
@@ -115,7 +126,7 @@ flowchart LR
 
 | Stage | PQBlocks today | Next |
 |---|---|---|
-| Discover | `cbom-scanner` | PQ static analysis |
+| Discover | cbom-scanner | PQ static analysis |
 | Decide | – | policy-as-code engine, CNSA 2.0 evidence |
 | Migrate | – | hybrid file encryption, FIPS 203/204/205 primitives, SDKs |
 | Interoperate | `pqc-wireformat`, `hybrid-jwe` | TLS hybrid interop, ML-KEM CSR proof-of-possession, npm modules |
