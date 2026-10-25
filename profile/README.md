@@ -253,7 +253,7 @@ print(spins, energy)                                     # [1 1] -1.0
 
 - **Private vulnerability reporting** is enabled on every repository. Please report issues there, never in public. See the [security policy](https://github.com/PQBlocks/.github/blob/main/SECURITY.md) (acknowledgement within 3 working days, coordinated disclosure normally within 90 days).
 - **Secret scanning with push protection**, **Dependabot alerts** and **protected `main` branches** are on across the organisation.
-- **Releases** are built in CI and published to PyPI with **Trusted Publishing** (no long-lived tokens), signed with **Sigstore**, and shipped with a **CycloneDX SBOM**. Every PyPI release requires maintainer approval. GitHub Actions are pinned by commit SHA.
+- **Release pipeline (being enabled):** packages are built in CI and published to PyPI with **Trusted Publishing** (no long-lived tokens), signed with **Sigstore**, and shipped with a **CycloneDX SBOM**. Every PyPI release requires maintainer approval, and GitHub Actions are pinned by commit SHA.
 
 ---
 
