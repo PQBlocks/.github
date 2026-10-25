@@ -1,0 +1,23 @@
+name: Bug report
+description: Something does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Security issue? Stop here and follow the security policy instead."
+  - type: input
+    id: version
+    attributes: {label: Package and version, placeholder: "pqblocks-wire 0.1.0"}
+    validations: {required: true}
+  - type: input
+    id: python
+    attributes: {label: Python version and OS, placeholder: "3.13, Ubuntu 24.04"}
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes: {label: Minimal reproduction, description: Code or inputs that show the problem., render: python}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected vs actual behaviour}
+    validations: {required: true}
