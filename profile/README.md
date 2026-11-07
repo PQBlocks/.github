@@ -292,6 +292,7 @@ Classical algorithms modelled on quantum dynamics, such as Simulated Bifurcation
 </details>
 
 ---
+[![M8ven Score](https://m8ven.ai/badge/mcp/pqblocks-pqblocks-mcp-vqbf6x?v=79aca79d6dff4989a5d9d0ae38c48430)](https://m8ven.ai/mcp/pqblocks-pqblocks-mcp-vqbf6x?s=readme)
 
 <p align="center">
   <sub><b>PQBlocks</b> · Post-Quantum Building Blocks · Apache-2.0 · <a href="https://github.com/PQBlocks/.github/blob/main/SECURITY.md">Security</a> · <a href="https://github.com/PQBlocks/.github/blob/main/CRYPTO-POLICY.md">Cryptography policy</a></sub>
