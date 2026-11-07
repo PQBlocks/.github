@@ -266,7 +266,6 @@ print(spins, energy)                                     # [1 1] -1.0
 A package moves from review to release only when its tests, official vectors, fresh-install checks and security review all pass.
 
 ---
-[![M8ven Score](https://m8ven.ai/badge/mcp/pqblocks-pqblocks-mcp-vqbf6x?v=79aca79d6dff4989a5d9d0ae38c48430)](https://m8ven.ai/mcp/pqblocks-pqblocks-mcp-vqbf6x?s=readme)
 
 ## 🤝 Contributing
 
